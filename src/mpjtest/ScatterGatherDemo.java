@@ -27,5 +27,7 @@ public class ScatterGatherDemo{
 	}
 		MPI.COMM_WORLD.Scatter(globalSendBuf, 0, unitSize, MPI.INT,
 	            localRecvBuf,  0, unitSize, MPI.INT,root);
+		System.out.println("[Process " + rank + "] Received Chunk: " 
+	    + Arrays.toString(localRecvBuf));
 	}
 }
