@@ -29,5 +29,8 @@ public class ScatterGatherDemo{
 	            localRecvBuf,  0, unitSize, MPI.INT,root);
 		System.out.println("[Process " + rank + "] Received Chunk: " 
 	    + Arrays.toString(localRecvBuf));
+		for (int i = 0; i < unitSize; i++) {
+		}
+		}
 	}
 }
