@@ -32,6 +32,7 @@ public class ScatterGatherDemo{
 		for (int i = 0; i < unitSize; i++) {
 			localRecvBuf[i] = localRecvBuf[i] * 2;
 		}
+		System.out.println("[Process " + rank + "] Doubled Chunk:  " + Arrays.toString(localRecvBuf));
 		}
 	}
 }
