@@ -22,7 +22,9 @@ public class ScatterGatherDemo{
 			for (int i = 0; i < globalSendBuf.length; i++) {
 				globalSendBuf[i] = i + 1;
 		}
-			
+		System.out.println("[Process 0] Initial Array (16 integers): " 
+		+ Arrays.toString(globalSendBuf));	
 	}
+		MPI.COMM_WORLD.Scatter()
 	}
 }
