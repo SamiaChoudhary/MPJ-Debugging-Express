@@ -9,6 +9,7 @@ public class ScatterGatherDemo{
 		int unitSize = 4;
 		int root = 0;
 		if (size != 4) {
+			if (rank == 0) {}
 		}
 	}
 	}
