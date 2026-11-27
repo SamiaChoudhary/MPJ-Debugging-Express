@@ -12,6 +12,7 @@ public class ScatterGatherDemo{
 			if (rank == 0) {
 				System.out.println("Please run with exactly 4 processes (np = 4).");
             }
+			MPI.Finalize();
 		}
 	}
 	}
