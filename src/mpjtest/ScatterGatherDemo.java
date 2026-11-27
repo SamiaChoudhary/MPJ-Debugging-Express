@@ -20,7 +20,9 @@ public class ScatterGatherDemo{
 		int[] finalGatherBuf = new int[size * unitSize];
 		if (rank == root) {
 			for (int i = 0; i < globalSendBuf.length; i++) {
+				globalSendBuf[i] = i + 1;
 		}
+			
 	}
 	}
 }
