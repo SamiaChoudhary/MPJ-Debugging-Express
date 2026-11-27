@@ -15,6 +15,7 @@ public class ScatterGatherDemo{
 			MPI.Finalize();
 			return;
 		}
+		int[] globalSendBuf = new int[size * unitSize];
 	}
 	}
 }
