@@ -30,6 +30,7 @@ public class ScatterGatherDemo{
 		System.out.println("[Process " + rank + "] Received Chunk: " 
 	    + Arrays.toString(localRecvBuf));
 		for (int i = 0; i < unitSize; i++) {
+			localRecvBuf[i] = localRecvBuf[i] * 2;
 		}
 		}
 	}
