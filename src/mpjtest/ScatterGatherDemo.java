@@ -9,7 +9,9 @@ public class ScatterGatherDemo{
 		int unitSize = 4;
 		int root = 0;
 		if (size != 4) {
-			if (rank == 0) {}
+			if (rank == 0) {
+				System.out.println("Please run with exactly 4 processes (np = 4).");
+            }
 		}
 	}
 	}
