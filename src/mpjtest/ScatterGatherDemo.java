@@ -25,6 +25,7 @@ public class ScatterGatherDemo{
 		System.out.println("[Process 0] Initial Array (16 integers): " 
 		+ Arrays.toString(globalSendBuf));	
 	}
-		MPI.COMM_WORLD.Scatter()
+		MPI.COMM_WORLD.Scatter(globalSendBuf, 0, unitSize, MPI.INT,
+	            localRecvBuf,  0, unitSize, MPI.INT,root);
 	}
 }
