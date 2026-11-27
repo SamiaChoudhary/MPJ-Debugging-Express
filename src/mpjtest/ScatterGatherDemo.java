@@ -40,6 +40,7 @@ public class ScatterGatherDemo{
 			System.out.println("[Process 0] Final Gathered Array:      " + 
 		Arrays.toString(finalGatherBuf));
         }
+		MPI.Finalize();
 		}
 	}
 }
