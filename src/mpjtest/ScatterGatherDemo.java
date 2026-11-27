@@ -8,6 +8,8 @@ public class ScatterGatherDemo{
 		int size = MPI.COMM_WORLD.Size();
 		int unitSize = 4;
 		int root = 0;
+		if (size != 4) {
+		}
 	}
 	}
 }
