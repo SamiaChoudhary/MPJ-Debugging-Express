@@ -36,6 +36,7 @@ public class ScatterGatherDemo{
 		+ rank + "] Doubled Chunk:  " + Arrays.toString(localRecvBuf));
 		MPI.COMM_WORLD.Gather(localRecvBuf,   0, unitSize, MPI.INT,
 	            finalGatherBuf, 0, unitSize, MPI.INT, root);
+		if (rank == root) {}
 		}
 	}
 }
