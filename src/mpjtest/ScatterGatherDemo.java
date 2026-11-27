@@ -7,6 +7,7 @@ public class ScatterGatherDemo{
 		int rank = MPI.COMM_WORLD.Rank();
 		int size = MPI.COMM_WORLD.Size();
 		int unitSize = 4;
+		int root = 0;
 	}
 	}
 }
