@@ -17,6 +17,7 @@ public class ScatterGatherDemo{
 		}
 		int[] globalSendBuf = new int[size * unitSize];
 		int[] localRecvBuf = new int[unitSize];
+		int[] finalGatherBuf = new int[size * unitSize];
 	}
 	}
 }
